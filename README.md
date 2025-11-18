@@ -6,3 +6,5 @@ dnsutilis.yaml, mysql_deployment.yaml , pv.yaml,pv  , pv_wordpress.yaml , wordpr
 
 Wordpress.tar.gz is rar file of all the above file
      
+mysql_deployment.yaml
+It contain code about Database.
