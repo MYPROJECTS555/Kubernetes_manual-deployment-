@@ -3,12 +3,13 @@ kind: Service
 metadata:
   name: mysql
 spec:
-  ports:
-  - port: 3306
+  type: NodePort
   selector:
     app: mysql
-    #clusterIP: true
-  type: NodePort
+  ports:
+  - port: 3306
+    targetPort: 3306
+
 ---
 apiVersion: apps/v1
 kind: Deployment
